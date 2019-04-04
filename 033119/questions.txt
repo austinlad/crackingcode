@@ -1,0 +1,13 @@
+Q1. Leetcode#13
+Roman to Integer
+
+Algorithm:
+
+If you pay close attention to the question, it does mention two things:
+
+The correct syntax is Large to small from left to right.
+If a small number comes before large, it makes the number smaller. There are some special cases for that but apparently it is true for all occurences (albeit invalid ones).
+The above suggests that we don't really need special handling for those cases. We could move left to right and when we find a number bigger than its previous one, we should substract the previous number. Here is the code for that:
+
+Q2. Leetcode#21
+Merge Two Sorted Lists
